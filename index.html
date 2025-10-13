@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -14,6 +14,7 @@
     <!-- my css -->
     <link rel="stylesheet" href="style.css" />
   </head>
+  <div id="google_translate_element" style="display: none"></div>
   <body id="home">
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-lg fixed-top">
@@ -36,6 +37,27 @@
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact Me</a>
             </li>
+            <!-- Language Switcher Dropdown -->
+            <!-- <li class="nav-item dropdown language-switcher">
+              <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-globe2 me-1"></i>
+                <span id="currentLanguage">English</span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end animate__animated animate__fadeIn" aria-labelledby="languageDropdown">
+                <li>
+                  <a class="dropdown-item d-flex align-items-center" href="#" onclick="setLanguage('en')">
+                    <img src="https://flagcdn.com/16x12/gb.png" alt="English" class="me-2" style="width: 20px; height: 15px; border-radius: 3px" />
+                    English
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item d-flex align-items-center" href="#" onclick="setLanguage('id')">
+                    <img src="https://flagcdn.com/16x12/id.png" alt="Indonesia" class="me-2" style="width: 20px; height: 15px; border-radius: 3px" />
+                    Indonesia
+                  </a>
+                </li>
+              </ul>
+            </li> -->
           </ul>
         </div>
       </div>
@@ -44,7 +66,7 @@
 
     <!-- jumbotron -->
     <section class="jumbotron text-center">
-      <img src="img/waifu gw.jfif" alt="waifu gw" title="waifu gweh :D" width="200" class="rounded-circle img-thumbnail" />
+      <img src="img/poto gweh.jpg" alt="Man Of The Year" title="Man Of The Year" width="200" class="rounded-circle img-thumbnail" />
       <h1 class="display-4">Lalu Deyndra</h1>
       <p class="lead">A man who works as a Back-End Developer</p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -68,18 +90,18 @@
         <div class="row justify-content-center fs-5">
           <div class="col-md-4">
             <p>
-              I am a back-end developer specializing in Laravel and JavaScript, with experience in building and managing APIs, CRUD operations using fetch API, and handling dynamic data in Blade-based projects. My expertise includes
-              integrating SweetAlert for better user interactions and optimizing pagination for efficient data management.
+              I am a back-end developer specializing in Laravel and JavaScript. My experience includes building and managing APIs, implementing CRUD operations with fetch API, and handling dynamic data in Blade-based projects. I also
+              integrate SweetAlert for enhanced user interactions and optimize pagination for efficient data management.
             </p>
           </div>
           <div class="col-md-4">
             <p>
-              Beyond web development, I have a strong interest in cybersecurity and ethical hacking. I am actively learning CTF (Capture The Flag) to deepen my understanding of security vulnerabilities and system protection. My technical
-              skills also extend to working with Ubuntu on WSL and server management. I am always eager to expand my back-end expertise and take on new challenges in API development and system architecture.
+              I have a strong interest in cybersecurity and ethical hacking, sometimes im learning CTF (Capture The Flag) to deepen my understanding of security vulnerabilities and system protection. My technical skills extend to working
+              with Ubuntu on WS.
             </p>
           </div>
           <div class="col-md-4">
-            <p>I am always eager to expand my back-end expertise and take on new challenges in API development and system architecture.</p>
+            <p>I am always eager to expand my expertise, take on new challenges in API development, and improve system architecture. Continuous learning and growth are my main motivations in the tech industry.</p>
           </div>
         </div>
       </div>
@@ -101,37 +123,31 @@
             <h2>My Projects</h2>
           </div>
         </div>
-        <div class="row justify-content-evenly">
-          <div class="col-md-4 mb-4">
-            <a href="https://pkl.exirostudio.my.id/" target="_blank" rel="noopener noreferrer">
+        <div class="row justify-content-center">
+          <div class="col-6 col-sm-6 col-md-4 mb-4">
+            <a href="https://pkl.senvada.id/" target="_blank" rel="noopener noreferrer">
               <div class="card">
                 <img src="img/Screenshot 2025-03-31 084348.png" class="card-img-top" alt="programer" />
                 <div class="card-body">
-                  <p class="card-text">This is are my first project of all. Building simple Web for my school with teams work together, as a Back-End Developer of course</p>
+                  <p class="card-text">This is are my first project of all. Building simple Web for my school with teams work together, as a Back-End Developer of course.</p>
                 </div>
               </div>
             </a>
           </div>
-          <div class="col-md-4 mb-4">
-            <a href="https://laludeyndra.github.io/WebPortofolio/" target="_blank">
-              <div class="card">
-                <img src="img/Screenshot 2025-03-31 084909.png" class="card-img-top" alt="programer" />
-                <div class="card-body">
-                  <p class="card-text">And this is are my portofolio as my second project. i'll put my all projects in here for my future projects</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4 mb-4">
+          <div class="col-6 col-sm-6 col-md-4 mb-4">
             <a href="https://laludeyndra.github.io/PageInviteGachaBot/" target="_blank">
               <div class="card">
                 <img src="img/Gacha.png" class="card-img-top" alt="programer" />
                 <div class="card-body">
-                  <p class="card-text">This are my third projects, It's just a small project, creating a Discord bot with a "Gacha" theme. I created this project because I love manga and gacha, and I'm a "gacha addict," hehe.</p>
+                  <p class="card-text">
+                    This are my second projects and i work alone by myself which is called "lone wolf" in today's trend, It's just a small project, creating a Discord bot with a "Gacha" theme. I created this project because I love manga and
+                    gacha, and I'm a "gacha addict," hehe.
+                  </p>
                 </div>
               </div>
             </a>
           </div>
+          <!-- Batas -->
         </div>
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -226,5 +242,6 @@
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   </body>
 </html>

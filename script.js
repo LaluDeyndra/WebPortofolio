@@ -230,3 +230,25 @@ const _0x4e4277 = _0x5f58;
       _0x3c304c[_0x1c3892(0xee)] && _0x3c304c[_0x1c3892(0xf8)] && (_0x3c304c[_0x1c3892(0xfa)] === 'J' || _0x3c304c[_0x1c3892(0xfa)] === 'j') && _0x3c304c[_0x1c3892(0x107)](),
       _0x3c304c[_0x1c3892(0xee)] && _0x3c304c['shiftKey'] && (_0x3c304c['key'] === 'C' || _0x3c304c['key'] === 'c') && _0x3c304c['preventDefault']();
   });
+
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement(
+    {
+      pageLanguage: 'en',
+      includedLanguages: 'en,id',
+      autoDisplay: false,
+    },
+    'google_translate_element'
+  );
+}
+
+function setLanguage(lang) {
+  const currentLang = document.querySelector('#currentLanguage');
+  currentLang.textContent = lang === 'en' ? 'English' : 'Indonesia';
+
+  const selectField = document.querySelector('.goog-te-combo');
+  if (selectField) {
+    selectField.value = lang;
+    selectField.dispatchEvent(new Event('change'));
+  }
+}
